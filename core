@@ -93,14 +93,14 @@ READ_ARIA2_CONF() {
         exit 1
     else
         ARIA2_DOWNLOAD_DIR=$(grep ^dir "${ARIA2_CONF}" | cut -d= -f2-)
-        RPC_PORT=$(grep ^rpc-listen-port "${ARIA2_CONF}" | cut -d= -f2-)
-        RPC_SECRET=$(grep ^rpc-secret "${ARIA2_CONF}" | cut -d= -f2-)
-        SAVE_SESSION_INTERVAL=$(grep ^save-session-interval "${ARIA2_CONF}" | cut -d= -f2-)
-        [[ ${ARIA2_DOWNLOAD_DIR} && ${RPC_PORT} && ${SAVE_SESSION_INTERVAL} ]] || {
-            echo -e "$(DATE_TIME) ${ERROR} Aria2 configuration file incomplete."
-            exit 1
-        }
-        RPC_ADDRESS="localhost:${RPC_PORT}/jsonrpc"
+#        RPC_PORT=$(grep ^rpc-listen-port "${ARIA2_CONF}" | cut -d= -f2-)
+#        RPC_SECRET=$(grep ^rpc-secret "${ARIA2_CONF}" | cut -d= -f2-)
+#        SAVE_SESSION_INTERVAL=$(grep ^save-session-interval "${ARIA2_CONF}" | cut -d= -f2-)
+#        [[ ${ARIA2_DOWNLOAD_DIR} && ${RPC_PORT} && ${SAVE_SESSION_INTERVAL} ]] || {
+#            echo -e "$(DATE_TIME) ${ERROR} Aria2 configuration file incomplete."
+#            exit 1
+#        }
+#        RPC_ADDRESS="localhost:${RPC_PORT}/jsonrpc"
     fi
 }
 
