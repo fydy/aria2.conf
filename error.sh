@@ -1,2 +1,3 @@
-!/bin/sh
-sudo service aria2 stop
+#!/bin/bash
+
+sudo service aria2 restart
