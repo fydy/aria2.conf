@@ -39,7 +39,7 @@ DRIVE_PATH='/Public'
 ## 高级设置 ##
 
 # RCLONE 配置文件路径
-#export RCLONE_CONFIG=$HOME/.config/rclone/rclone.conf
+export RCLONE_CONFIG=/home/runner/.config/rclone/rclone.conf
 
 # RCLONE 配置文件密码
 #export RCLONE_CONFIG_PASS=password
