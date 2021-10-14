@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo service aria2 restart
+echo 5 | sudo /home/runner/.aria2/aria2.sh
