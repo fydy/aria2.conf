@@ -1,3 +1,7 @@
 #!/bin/bash
-
-echo 5 | sudo bash /home/runner/.aria2/aria2.sh
+pids=$(ps -ef | grep aira2c| awk '{print $2}')
+for pid in $pids
+do
+ echo  $pid
+ kill -9  $pid
+done
